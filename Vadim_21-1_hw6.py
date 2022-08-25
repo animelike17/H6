@@ -5,14 +5,14 @@ class Solution:
     """
             find_target -> YOUR_CODE
         """
-    def find_target(self, list_, target):
+    def find_target(self, list1, target):
         low = 0
-        high = len(list_) - 1
+        high = len(list1) - 1
 
 
         while low <= high:
             mid = (low + high) // 2
-            guess = list_[mid]
+            guess = list1[mid]
             if guess == target:
                 return mid
 
@@ -22,7 +22,7 @@ class Solution:
                 low = mid + 1
         return None
 
-list1 = Solution()
-print(list1.find_target(get_list(), 10000))
+list2 = Solution()
+print(list2.find_target(get_list(), 10000))
 
 
